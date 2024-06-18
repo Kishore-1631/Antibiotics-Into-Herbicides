@@ -1,0 +1,53 @@
+ANTIBIOTICS FAILURE INTO HERBICIDES
+
+Client.ID: CLI-38226
+----------------------------------------------------
+REQUIREMENT ANALYSIS
+----------------------------------------------------
+Antibiotics Name: Cerberus-X
+Quantity: 120
+Bacteria : Vancomycin-resistant Enterococcus
+Withdrawal Reason: Unintended activation of virulence factors in targeted bacteria, worsening infections
+Chemical: lincosamide
+----------------------------------------------------
+BIOHERB ANALYSIS
+----------------------------------------------------
+Dl: 10
+Du: 25
+Pl: 15
+Pu: 30
+Target Weed: Goosefoot
+Growth-Treated Sample: 40
+Growth-Control Sample: 100
+IC50: 45
+Growth Inhibition: 60
+Hill Coefficient: 2
+Confidence Interval: 1.78 - 1.20
+----------------------------------------------------
+BIOQUOTIENT SCAN
+----------------------------------------------------
+Herbicide Concentration: 16
+Average Weight: 20
+Cell Viability: 55
+Growth Inhibitions: 45
+Reactive Oxygen Species: VeryHigh
+Residual Activity: 70
+Membrane Permeability: VeryHigh
+Protein Folding: Yes
+Metabolic Activity: Moderate
+Cellular Apoptosis: 25
+LD50: 80
+LD50 Range: Low Toxocity
+----------------------------------------------------
+HerbiConversion Nexus
+----------------------------------------------------
+Herbiconversion Percentage Prediction: 82.74
+Antibiotic candidate: Lincosamide
+Target Weeds: Sicklepod, Velvetleaf
+Mechanism: Inhibits protein synthesis in weed ribosomes
+Stage of Developement: Pre-clinical trials
+Key Modification: Conjugation with plant-specific enzymes
+Environmental Considerations: Studies on impact on soil microbial communities
+Potential Challenges: Selectivity for target weeds; potential for development of resistant weed strains
+Materials Need: Lincosamide compound, plantspecific enzymes, lab equipment for conjugation and testing  
+Duration: Estimated 2-3 years for preclinical trials 

@@ -1,0 +1,417 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+  	<title>Client :: Status Update</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farmland Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'client/client_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'client/client_home/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'client/client_home/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<link rel="stylesheet" href="{% static 'client/client_home/css/flexslider.css' %}" type="text/css" media="screen" property="" />
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="{% static 'client/client_home/css/font-awesome.min.css' %}" />
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+
+	</head>
+  <style>
+		.button-18 {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+
+
+.Btn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+}
+
+.svgIcon {
+  fill: rgb(70, 70, 70);
+}
+
+.icon2 {
+  width: 18px;
+  height: 5px;
+  border-bottom: 2px solid rgb(70, 70, 70);
+  border-left: 2px solid rgb(70, 70, 70);
+  border-right: 2px solid rgb(70, 70, 70);
+}
+
+.Btn:hover {
+  background-color: rgb(51, 51, 51);
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .icon2 {
+  border-bottom: 2px solid rgb(235, 235, 235);
+  border-left: 2px solid rgb(235, 235, 235);
+  border-right: 2px solid rgb(235, 235, 235);
+}
+
+.Btn:hover .svgIcon {
+  fill: rgb(255, 255, 255);
+  animation: slide-in-top 1s linear infinite;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+.volume {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(205, 191, 247);
+  overflow: hidden;
+  position: relative;
+}
+.volume-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  position: relative;
+}
+.volume-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+.volume-icon:before {
+  content: "";
+  display: flex;
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.volume-input:checked + .volume-icon:before {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+.volume-svg {
+  z-index: 2;
+  color: rgb(32, 33, 36);
+  height: 30px;
+  width: 30px;
+}
+.volume-input:checked + .volume-icon svg {
+  color: black;
+}
+</style>
+	<body>
+	<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+		<div class="banner" style="height:641px;">
+
+		<div class="container">
+			<nav class="navbar navbar-default">
+
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="wthree_logo">
+						<h1><a class="navbar-brand" href="/client_home/"><span>F</span>armland</a></h1>
+					</div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav link-effect-5" id="link-effect-5">
+							<li ><a href="/client_home/" data-hover="Home">Home</a></li>
+							<li><a href="/client_req/" data-hover="Requirement">Requirement</a></li>
+							<li class="active"><a href="/client_checkpoints/" data-hover="Checkpoints">Checkpoints</a></li>
+<!--							<li class="dropdown">-->
+<!--								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Short Codes">Short Codes <b class="caret"></b></a>-->
+<!--								<ul class="dropdown-menu agile_short_dropdown">-->
+<!--									<li><a href="icons.html">Icons</a></li>-->
+<!--									<li><a href="typography.html">Typography</a></li>-->
+<!--								</ul>-->
+<!--							</li>-->
+							<li><a href="/payment/" data-hover="Payment">Payment</a></li>
+							<li><a href="/client_logout/" data-hover="Logout">Logout</a></li>
+						</ul>
+						<div class="w3_social_icons">
+							<ul class="w3layouts_social">
+
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+			</nav>
+
+
+<br><br><br><br><br>
+
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 style="margin-right:-520px;">STATUS UPDATE</h2>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table">
+						  <thead class="thead-primary">
+						    <tr style="background-color:#87b200;">
+						      <th style="color:white;text-align:center;">Client Id</th>
+						      <th style="color:white;text-align:center;">Name</th>
+						      <th style="color:white;text-align:center;">Email</th>
+						      <th style="color:white;text-align:center;">Phone Number</th>
+							<th style="color:white;text-align:center;">Status</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr style="background-color:white;">
+
+						      <th style="color:black;text-align:center;">{{data.client_id}}</th>
+						      <td style="color:black;text-align:center;">{{data.name}}</td>
+						      <td style="color:black;text-align:center;">{{data.email}}</td>
+						      <td style="color:black;text-align:center;">{{data.phone}}</td>
+
+
+								{% if datas is False %}
+								<td style="text-align:center;"><strong style="color:black;">{{data.status}}...</strong></td>
+								{% endif %}
+
+
+								{% if datas is True %}
+    {% if data1 %}
+        <td style="text-align:center;">
+            <center>
+                {% for item in data1 %}
+                    {% if item.final_report %}
+                        <a href="{{ item.final_report.url }}" target="_blank" download="">
+<button class="Btn" onclick="openMinimizedWindow('{{ i.final_report.url }}')">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="1em"
+    viewBox="0 0 384 512"
+    class="svgIcon"
+  >
+    <path
+      d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+    ></path>
+  </svg>
+  <span class="icon2"></span>
+</button>
+ </a>
+                    {% endif %}
+
+				<br>
+                                <a href="/read/{{data.client_id}}/" class="volume">
+                                    <input type="checkbox" class="volume-input" />
+                                          <div class="volume-icon">
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                              width="24"
+                                              height="24"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              fill="none"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="volume-svg"
+                                            >
+                                              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                              <path
+                                                d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+                                              ></path>
+                                            </svg>
+                                          </div>
+                                </a>
+
+                {% endfor %}
+            </center>
+        </td>
+
+    {% endif %}
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+						    </tr>
+
+						  </tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<script src="{% static 'client/client_checkpoints/js/jquery.min.js' %}"></script>
+  <script src="{% static 'client/client_checkpoints/js/popper.js' %}"></script>
+  <script src="{% static 'client/client_checkpoints/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'client/client_checkpoints/js/main.js' %}"></script>
+
+
+
+
+	<script defer src="{% static 'client/client_home/js/jquery.flexslider.js' %}"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				</script>
+
+
+
+<script type="text/javascript" src="{% static 'client/client_home/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'client/client_home/js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="{% static 'client/client_home/js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+		</div></div>
+	</body>
+</html>
+

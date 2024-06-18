@@ -1,0 +1,317 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+  	<title>BioHerb Analysis :: ReqAnalyse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+  <!-- Required meta tags -->
+   <base href="/static/bioquotient_scan/bioquotient_home/">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--/google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--//google-fonts -->
+    <!--/Template-CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!--//Template-CSS -->
+
+
+
+
+
+	<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'images/b.jpg' %});
+    background-repeat: no-repeat;height:712px;">
+	 <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+      <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand" href="/bioquotient_home/">
+                        <span class="w3yellow">BioQuotient</span> Scan
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/bioherb_report/">BioHerb Report</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/bioquotient_scan/">Analysis BioQuotient</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/outcome_visual/">Outcome Visualization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/bioquotient_scan_logout/">Logging Out</a>
+                        </li>
+
+                    </ul>
+                    <!--/search-right-->
+<!--                    <ul class="header-search me-lg-4">-->
+<!--                        <li class="nav-item search-right">-->
+<!--                            <a href="#search" class="btn search-btn btn-primary" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span> Search</a>-->
+<!--                            &lt;!&ndash; search popup &ndash;&gt;-->
+<!--                            <div id="search" class="pop-overlay">-->
+<!--                                <div class="popup">-->
+<!--                                    <h3 class="title-w3l two mb-4 text-left">Search Here</h3>-->
+<!--                                    <form action="#" method="GET" class="search-box d-flex position-relative">-->
+<!--                                        <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">-->
+<!--                                        <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+<!--                                <a class="close" href="#close">×</a>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; /search popup &ndash;&gt;-->
+<!--                        </li>-->
+<!--                    </ul>-->
+                    <!--//search-right-->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+
+            </nav>
+        </div>
+    </header>
+
+<STYLE>
+
+.button-13 {
+  appearance: none;
+  background-color: #454545;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-13:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-13:hover {
+  background-color: #FF7800 ;
+}
+
+.button-13:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-13:disabled {
+  background-color: #FF7800 ;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-13:active {
+  background-color: #FF7800;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.button-23 {
+  appearance: none;
+  background-color: #FF7800;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-23:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-23:hover {
+  background-color: #454545 ;
+}
+
+.button-23:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-23:disabled {
+  background-color: #454545 ;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-23:active {
+  background-color: #454545;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+</STYLE>
+
+
+<br><br><br><br><br><br>
+
+	<section class="ftco-section">
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="text-center mb-4" style="color: white; font-family:book man old;font-size:28px;">BIOQUOTIENT SCAN ANALYSIS</h4>
+					<div class="table-wrap" style="overflow:auto;max-height:400px;">
+						<table class="table" >
+					    <thead class="thead-primary">
+					      <tr style="background-color:#FF7800;">
+					        <th style="font-size:15px;color:black;text-align:center;">CLIENT.ID</th>
+					        <th style="font-size:15px;color:black;text-align:center;">ANTIBIOTICS NAME</th>
+					        <th style="font-size:15px;color:black;text-align:center;">Dl</th>
+					        <th style="font-size:15px;color:black;text-align:center;">Du</th>
+					        <th style="font-size:15px;color:black;text-align:center;">Pl</th>
+                              <th style="font-size:15px;color:black;text-align:center;">Pu</th>
+                              <th style="font-size:15px;color:black;text-align:center;">TARGET WEED</th>
+                              <th style="font-size:15px;color:black;text-align:center;">GROWTH OF TREATED SAMPLE</th>
+                              <th style="font-size:15px;color:black;text-align:center;">GROWTH OF CONTROL SAMPLE</th>
+                              <th style="font-size:15px;color:black;text-align:center;">IC50</th>
+                              <th style="font-size:15px;color:black;text-align:center;">GROWTH INHIBITION</th>
+                              <th style="font-size:15px;color:black;text-align:center;">HILL COEFFICIENT</th>
+                              <th style="font-size:15px;color:black;text-align:center;">CONFIDENCE INTERVAL</th>
+                               <th style="font-size:15px;color:black;text-align:center;">BIOHERB ANALYSIS PLOT</th>
+                              <th style="font-size:15px;color:black;text-align:center;">ACTION</th>
+
+
+
+
+					      </tr>
+					    </thead>
+					    <tbody>
+                         {% for i in data %}
+					      <tr>
+					        <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.client_id}}</th>
+                             <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;" >{{i.antibiotics_name}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.Dl}}</th>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.Du}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.Pl}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.Pu}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.target_weed}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.growth_of_treated_sample}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.growth_of_control_sample}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.IC50}}</td>
+					         <td style="color:black;text-align:center;background-color:white;">{{i.growth_inhibition}}</td>
+                             <td style="color:black;text-align:center;background-color:white;">{{i.hill_coefficient}}</td>
+                             <td style="color:black;text-align:center;background-color:white;">{{i.confidence_interval}}</td>
+                             <td style="color:black;text-align:center;background-color:white;">
+                                  {% if i.bioherb_analysis_plot %}
+                                <a href="{{ i.bioherb_analysis_plot.url }}" target="_blank">
+                                    <img src="{{ i.bioherb_analysis_plot.url }}"  style="max-width: 150px; max-height: 150px;">
+                                </a>
+                                 {% else %}
+                                 No file available
+                                    {% endif %}
+                             </td>
+
+
+
+
+
+
+                              {% if i.bqsdone2 is False %}
+							  <td style="color:black;text-align:center;background-color:white;">
+                                  <a href="/bqsresultprocess/{{i.client_id}}/">
+                                      <button class="button-13" style="">ANALYZE</button>
+                                  </a>
+                              </td>
+                             {% else %}
+                              <td style="color:black;text-align:center;background-color:white;">
+                                      <button class="button-23" style="">ANALYZED</button>
+                              </td>
+                              {% endif %}
+					      </tr>
+{% endfor %}
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,53 @@
+ANTIBIOTICS FAILURE INTO HERBICIDES
+
+Client.ID: CLI-33599
+----------------------------------------------------
+REQUIREMENT ANALYSIS
+----------------------------------------------------
+Antibiotics Name: Lazarus-7
+Quantity: 120
+Bacteria : Helicobacter pylori
+Withdrawal Reason: Uncontrolled replication and unintended targeting of beneficial gut bacteria
+Chemical: macrolide
+----------------------------------------------------
+BIOHERB ANALYSIS
+----------------------------------------------------
+Dl: 20
+Du: 35
+Pl: 25
+Pu: 40
+Target Weed: Cyperus esculentus
+Growth-Treated Sample: 25
+Growth-Control Sample: 100
+IC50: 45
+Growth Inhibition: 75
+Hill Coefficient: 1
+Confidence Interval: 5.18 - 3.77
+----------------------------------------------------
+BIOQUOTIENT SCAN
+----------------------------------------------------
+Herbicide Concentration: 20
+Average Weight: 23
+Cell Viability: 78
+Growth Inhibitions: 22
+Reactive Oxygen Species: High
+Residual Activity: 86
+Membrane Permeability: High
+Protein Folding: Yes
+Metabolic Activity: Moderate
+Cellular Apoptosis: 10
+LD50: 86
+LD50 Range: Low Toxocity
+----------------------------------------------------
+HerbiConversion Nexus
+----------------------------------------------------
+Herbiconversion Percentage Prediction: 59.52
+Antibiotic candidate: Streptogramin
+Target Weeds: Waterhemp, Sicklepod  
+Mechanism: Inhibits protein synthesis in weed ribosomes 
+Stage of Developement: Preclinical trials 
+Key Modification: Conjugation with plantspecific enzymes  
+Environmental Considerations: Studies on impact on soil microbial communities  
+Potential Challenges: Selectivity for target weeds; potential for development of resistant weed strains  
+Materials Need: Streptogramin compound, plantspecific enzymes, lab equipment for conjugation and testing  
+Duration: Estimated 2-3 years for preclinical trials

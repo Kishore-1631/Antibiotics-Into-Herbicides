@@ -1,0 +1,417 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+  	<title>BioQuotient Scan :: Reg_Record </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="{% static 'admins/admins_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="{% static 'admins/admins_home/css/style.css' %}" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="{% static 'admins/admins_home/css/font-awesome.css' %}" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="{% static 'admins/admins_home/js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'admins/admins_home/js/bootstrap.js' %}"></script>
+<script src="{% static 'admins/admins_home/js/SmoothScroll.min.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+	</head>
+  <style>
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+
+.button-25 {
+  background: #039487;
+  border: 1px solid #039487;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-25:hover,
+.button-25:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #039487;
+}
+
+.button-25:active {
+  opacity: .5;
+}
+
+
+
+.button-26 {
+  background: #FFFFFF;
+  border: 1px solid #039487;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color:#039487  ;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+
+.button-27 {
+  background: #FFFFFF;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color:#FF4742;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+</style>
+  <body style="background-image: url({% static 'images/1.jpg' %}); background-repeat:no-repeat;  max-height:700px;">
+
+	<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+<div class="header">
+
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="/admins_home/">Admin <span>Portal</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li><a href="/admins_home/" class="hvr-sweep-to-bottom">Home</a></li>
+							<li class="active"><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Log<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li ><a class="hvr-sweep-to-bottom" href="/client_reg/">Client Hub</a></li>
+									<li ><a class="hvr-sweep-to-bottom" href="/bioherb_analysis_reg/">BioHerb Analysis</a></li>
+									<li class="active"><a class="hvr-sweep-to-bottom" href="/bioquotient_scan_reg/">BioQuotient Scan</a></li>
+									<li ><a class="hvr-sweep-to-bottom" href="/herbiconversion_nexus_reg/">HerbiConversion Nexus</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Validate Insights<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="hvr-sweep-to-bottom" href="/bioherb_analysis_report/">BioHerb Analysis</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/bioquotient_scan_report/">BioQuotient Scan</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/herbiconversion_nexus_report/">HerbiConversion Nexus</a></li>
+								</ul>
+							</li>
+							<li><a href="/report_view/" class="hvr-sweep-to-bottom">Resultant Analysis</a></li>
+							<li><a href="/payslip/" class="hvr-sweep-to-bottom">Payslip</a></li>
+							<li><a href="/admins_logout/" class="hvr-sweep-to-bottom">Logout</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+
+
+
+
+<br><br><br><br>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 style="margin-right:-600px;color:white;" class="heading-section">BIOQUOTIENT SCAN LOG INFO</h2>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table">
+						  <thead class="thead-primary">
+						    <tr style="background-color:#aebe27; color:black;font-size: 16px;">
+						      <th style="color:black;text-align:center;">BQS.ID</th>
+						      <th style="color:black;text-align:center;">NAME</th>
+						      <th style="color:black;text-align:center;">PHONE NUMBER</th>
+						      <th style="color:black;text-align:center;">EMAIL ADDRESS</th>
+								<th style="color:black;text-align:center;" colspan="2">ACTION</th>
+						    </tr>
+						  </thead>
+						  <tbody style="background-color:white; color:black;font-size: 16px;">
+						  {% for i in data %}
+						    <tr>
+
+						      <th style="color:black;text-align:center;" >{{i.emp_id}}</th>
+						      <td style="color:black;text-align:center;">{{i.name}}</td>
+						      <td style="color:black;text-align:center;">{{i.phone}}</td>
+						      <td style="color:black;text-align:center;">{{i.email}}
+
+							 {% if i.accept is False and i.decline is False %}
+							  <td style="text-align:center;"><center><a href="/accept/{{i.id}}/"><button class="button-25">Approve</button></a></center></td>
+								<td style="text-align:center;"><center><a href="/decline/{{i.id}}/"><button class="button-24">Reject</button></a></center></td>
+								 {% endif %}
+								{% if i.accept is True %}
+								<td style="text-align:center;"><center><a ><button class="button-26">Approved</button></a></center></td>
+								 <td style="text-align:center;"><center><a ><button class="button-27">No Action</button></a></center></td>
+
+								{% elif i.decline is True %}
+								 <td style="text-align:center;"><center><a ><button class="button-27">No Action</button></a></center></td>
+			 					<td><button class="button-26" role="button">Rejected</button></td>
+								{% endif %}
+
+
+
+
+
+
+
+
+
+
+							</tr>
+						  {% endfor %}
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+  	<script defer src="{% static 'administrator/admin_home/js/jquery.flexslider.js' %}"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+			  $('.flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+				  $('body').removeClass('loading');
+				}
+			  });
+			});
+		</script>
+	<!-- End-slider-script -->
+<!-- Flexslider-js for-testimonials -->
+<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems:1,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: {
+										portrait: {
+											changePoint:480,
+											visibleItems: 1
+										},
+										landscape: {
+											changePoint:640,
+											visibleItems:1
+										},
+										tablet: {
+											changePoint:768,
+											visibleItems: 1
+										}
+									}
+								});
+
+							});
+					</script>
+					<script type="text/javascript" src="{% static 'administrator/admin_home/js/jquery.flexisel.js' %}"></script>
+<!-- //Flexslider-js for-testimonials -->
+
+
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{% static 'administrator/admin_home/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'administrator/admin_home/js/easing.js' %}"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- //end-smooth-scrolling   -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'administrator/admin_home/js/bootstrap.js' %}"></script>
+
+
+
+  	<script type="text/javascript" src="{% static 'admins/admins_home/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admins/admins_home/js/easing.js' %}"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+  <link rel="stylesheet" href="{% static 'admins/admins_home/css/flexslider.css' %}" type="text/css" media="screen" property="" />
+			<script defer src="{% static 'admins/admins_home/js/jquery.flexslider.js' %}"></script>
+			<script type="text/javascript">
+				$(window).load(function(){
+					$('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						$('body').removeClass('loading');
+						}
+					});
+				});
+			</script>
+	</body>
+</html>
+

@@ -1,0 +1,53 @@
+ANTIBIOTICS FAILURE INTO HERBICIDES
+
+Client.ID: CLI-42059
+----------------------------------------------------
+REQUIREMENT ANALYSIS
+----------------------------------------------------
+Antibiotics Name: Atlas-8
+Quantity: 150
+Bacteria : Pseudomonas aeruginosa
+Withdrawal Reason: Catastrophic disruption of human gut microbiome leading to systemic health complications
+Chemical: lincosamide
+----------------------------------------------------
+BIOHERB ANALYSIS
+----------------------------------------------------
+Dl: 10
+Du: 20
+Pl: 15
+Pu: 25
+Target Weed: Creeping buttercup
+Growth-Treated Sample: 45
+Growth-Control Sample: 100
+IC50: 45
+Growth Inhibition: 55
+Hill Coefficient: 1
+Confidence Interval: 0.78 - 1.25
+----------------------------------------------------
+BIOQUOTIENT SCAN
+----------------------------------------------------
+Herbicide Concentration: 10
+Average Weight: 20
+Cell Viability: 80
+Growth Inhibitions: 20
+Reactive Oxygen Species: High
+Residual Activity: 91
+Membrane Permeability: High
+Protein Folding: Yes
+Metabolic Activity: Moderate
+Cellular Apoptosis: 5
+LD50: 50
+LD50 Range: Moderate Toxocity
+----------------------------------------------------
+HerbiConversion Nexus
+----------------------------------------------------
+Herbiconversion Percentage Prediction: 74.94
+Antibiotic candidate: Azithromycin
+Target Weeds: Foxtail, Crabgrass
+Mechanism: Inhibits cell division in weed cells  
+Stage of Developement: Earlystage research 
+Key Modification: Structural modifications for enhanced efficacy  
+Environmental Considerations: Assessment of impact on soil microbes and potential water contamination
+Potential Challenges: Formulation challenges; stability testing in field conditions  
+Materials Need: Azithromycin compound, lab equipment for structural modifications, plant growth facilities  
+Duration: Estimated 1-2 years for earlystage research

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <title>Farmland an Agriculture Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farmland Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'client/client_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'client/client_home/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'client/client_home/js/jquery-2.1.4.min.js' %}"></script>
+
+</head>
+<style>
+    #body {
+  background: #212121;
+
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: captalize;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  #body {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #body {
+    padding: 1px;
+  }
+}
+#body, #body * {
+  transition: all 0.25s;
+}
+#body .out-wrap {
+  position: relative;
+  width: 90%;
+  margin: auto;
+
+}
+@media only screen and (min-width: 768px) {
+  #body .out-wrap {
+    padding: 0 50px 50px;
+  }
+}
+#body .out-wrap #payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  #body .out-wrap #payment {
+    flex-wrap: wrap;
+  }
+  #body .out-wrap #payment > div {
+    margin: 15px auto !important;
+    width: 100%;
+  }
+  #body .out-wrap #payment > div:first-child {
+    order: 2;
+  }
+}
+#body .out-wrap #payment .details {
+  flex: 1;
+  max-width: 400px;
+  min-width: 300px;
+  margin-right: 50px;
+}
+#body .out-wrap #payment .details .input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+#body .out-wrap #payment .details .input-wrap label {
+  width: 100%;
+  margin: 25px 0 10px;
+}
+#body .out-wrap #payment .details .input-wrap input {
+  flex: 1;
+  border: 0;
+
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+#body .out-wrap #payment .details .input-wrap input:focus {
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+}
+#body .out-wrap #payment .details .input-wrap.four-num input {
+  margin: 0 10px 0 0;
+  text-align: center;
+}
+#body .out-wrap #payment .details .input-wrap.four-num input:last-child {
+  margin: 0;
+}
+#body .out-wrap #payment .details .halfbox {
+  display: flex;
+}
+#body .out-wrap #payment .details .halfbox > div:last-child {
+  margin-left: 25px;
+}
+#body .out-wrap #payment .details .halfbox > div:last-child input {
+  width: 50px;
+}
+#body .out-wrap #payment .details .halfbox > div:first-child .twin {
+  position: relative;
+  display: flex;
+}
+#body .out-wrap #payment .details .halfbox > div:first-child .twin:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  pointer-events: none;
+  content: "/";
+  bottom: 5px;
+  font-size: 20px;
+}
+#body .out-wrap #payment .details .halfbox > div:first-child .twin.focusit {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#body .out-wrap #payment .details .halfbox > div:first-child .twin.focusit input {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+#body .out-wrap #payment .details .halfbox > div:first-child input {
+  width: 40px;
+}
+#body .out-wrap #payment .card > div {
+  perspective: 1000px;
+  max-width: 350px;
+  height: 200px;
+  min-width: 320px;
+}
+@media only screen and (max-width: 767px) {
+  #body .out-wrap #payment .card > div {
+    margin: auto;
+  }
+}
+#body .out-wrap #payment .card.flip > div > .clayout {
+  transform: rotateY(180deg);
+}
+#body .out-wrap #payment .card.flip > div > .clayout .c-front .logo {
+  opacity: 0;
+  transition: none;
+}
+#body .out-wrap #payment .card .clayout {
+  position: relative;
+  transform-style: preserve-3d;
+}
+#body .out-wrap #payment .card .clayout.blueit .c-front, #body .out-wrap #payment .card .clayout.blueit .c-back {
+  background: linear-gradient(to right, #0af, #0099e6);
+}
+#body .out-wrap #payment .card .clayout .c-front, #body .out-wrap #payment .card .clayout .c-back {
+  max-width: 350px;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  transform-style: preserve-3D;
+  transform-origin: center center;
+  perspective: 50px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -webkit-box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to right, #b71c1c, #a11919);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#body .out-wrap #payment .card .clayout .c-front > p, #body .out-wrap #payment .card .clayout .c-back > p {
+  margin: 0;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo, #body .out-wrap #payment .card .clayout .c-back .chiplogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span {
+  height: 35px;
+  width: 150px;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span.chip b, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span.chip b {
+  position: relative;
+  height: 30px;
+  width: 43px;
+  display: block;
+  border-radius: 5px;
+  background: #f3c251;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span.chip b:before, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span.chip b:before {
+  background: url(https://d30y9cdsu7xlg0.cloudfront.net/png/190185-200.png) no-repeat center/100% 140%;
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span.logo, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span.logo {
+  transform: translate3d(0, 0, 0);
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span.logo b, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span.logo b {
+  width: 75px;
+  margin-left: auto;
+  display: block;
+  height: 100%;
+  background-size: auto 130% !important;
+  background-position-y: center !important;
+  transform: translateZ(0);
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span.logo b.master, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span.logo b.master {
+  background: url(https://new.corezoid.com/wp-content/uploads/2016/03/visa-mastercard.png) no-repeat;
+  background-position-x: 10px;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span.logo b.visa, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span.logo b.visa {
+  background: url(https://new.corezoid.com/wp-content/uploads/2016/03/visa-mastercard.png) no-repeat;
+  background-position-x: -60px;
+}
+#body .out-wrap #payment .card .clayout .c-front .chiplogo > span:last-child, #body .out-wrap #payment .card .clayout .c-back .chiplogo > span:last-child {
+  text-align: right;
+}
+#body .out-wrap #payment .card .clayout .c-front .cnum, #body .out-wrap #payment .card .clayout .c-back .cnum {
+  margin: 20px 0;
+  font-size: 20px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-family: monospace;
+}
+#body .out-wrap #payment .card .clayout .c-front .cnum span, #body .out-wrap #payment .card .clayout .c-back .cnum span {
+  letter-spacing: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  flex: 1;
+  text-align: center;
+}
+#body .out-wrap #payment .card .clayout .c-front .cname, #body .out-wrap #payment .card .clayout .c-front .cvtr, #body .out-wrap #payment .card .clayout .c-back .cname, #body .out-wrap #payment .card .clayout .c-back .cvtr {
+  min-height: 35px;
+  max-width: 215px;
+  overflow: hidden;
+}
+#body .out-wrap #payment .card .clayout .c-front .cname > span, #body .out-wrap #payment .card .clayout .c-front .cvtr > span, #body .out-wrap #payment .card .clayout .c-back .cname > span, #body .out-wrap #payment .card .clayout .c-back .cvtr > span {
+  display: block;
+  font-size: 8px;
+  color: #ccc;
+}
+#body .out-wrap #payment .card .clayout .c-front .cname label, #body .out-wrap #payment .card .clayout .c-front .cvtr label, #body .out-wrap #payment .card .clayout .c-back .cname label, #body .out-wrap #payment .card .clayout .c-back .cvtr label {
+  text-transform: uppercase;
+}
+#body .out-wrap #payment .card .clayout .c-front .cvtr, #body .out-wrap #payment .card .clayout .c-back .cvtr {
+  text-align: center;
+}
+#body .out-wrap #payment .card .clayout .c-back {
+  padding: 0;
+  align-items: initial;
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+#body .out-wrap #payment .card .clayout .c-back .topc {
+  line-height: 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#body .out-wrap #payment .card .clayout .c-back .backit {
+  height: 35px;
+  background: #333;
+  width: 100%;
+}
+#body .out-wrap #payment .card .clayout .c-back .cvv {
+  margin: 0 30px;
+  width: 100%;
+  text-align: right;
+}
+#body .out-wrap #payment .card .clayout .c-back .cvv b {
+  border-radius: 5px;
+  line-height: 25px;
+  height: 25px;
+  margin-top: 5px;
+  padding-right: 5px;
+  background: #fff;
+  display: block;
+  color: #000;
+}
+#body .out-wrap #payment .card .clayout .c-back .chiplogo {
+  margin: 0 15px 30px 0;
+  justify-content: flex-end;
+}
+
+.four-num, .cnum {
+
+}
+    
+
+
+.button {
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+  background-color: #fff;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+}
+
+.button-decor {
+  position: absolute;
+  inset: 0;
+  background-color: var(--clr);
+  transform: translateX(-100%);
+  transition: transform .3s;
+  z-index: 0;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.button__icon {
+  width: 48px;
+  height: 40px;
+  background-color: var(--clr);
+  display: grid;
+  place-items: center;
+}
+
+.button__text {
+  display: inline-block;
+  transition: color .2s;
+  padding: 2px 1.5rem 2px;
+  padding-left: .75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.button:hover .button__text {
+  color: #fff;
+}
+
+.button:hover .button-decor {
+  transform: translate(0);
+}
+
+
+
+
+
+</style>
+<body>
+	<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+<div class="banner">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="wthree_logo">
+						<h1><a class="navbar-brand" href="/client_home/"><span>F</span>armland</a></h1>
+					</div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav link-effect-5" id="link-effect-5">
+							<li ><a href="/client_home/" data-hover="Home">Home</a></li>
+							<li><a href="/client_req/" data-hover="Requirement">Requirement</a></li>
+							<li><a href="/client_checkpoints/" data-hover="Checkpoints">Checkpoints</a></li>
+<!--							<li class="dropdown">-->
+<!--								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Short Codes">Short Codes <b class="caret"></b></a>-->
+<!--								<ul class="dropdown-menu agile_short_dropdown">-->
+<!--									<li><a href="icons.html">Icons</a></li>-->
+<!--									<li><a href="typography.html">Typography</a></li>-->
+<!--								</ul>-->
+<!--							</li>-->
+							<li class="active"><a href="/payment/" data-hover="Payment">Payment</a></li>
+							<li><a href="/client_logout/" data-hover="Logout">Logout</a></li>
+						</ul>
+						<div class="w3_social_icons">
+							<ul class="w3layouts_social">
+
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</nav>
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div id="body" style="background-color:#212121;width: 1140px;
+      height: 526px;">
+  <div class="out-wrap">
+    <h1 class="text-center" style="color:white;">PAYMENT PORTAL</h1>
+       <form action="/process_payment/" method="POST">
+    <div id="payment" ng-app="myApp" ng-controller="myCtrl">
+      <div class="details">
+        <div class="input-wrap four-num">
+             <div class="halfbox">
+
+                     {% csrf_token %}
+                <div class="input-wrap">
+                  <label style="color:white; ">Client Id</label>
+                  <input style="color:black; background-color:white;" name="client_id" type="text" value="{{ client_id }}" disabled required>
+                </div>
+
+                <div class="input-wrap">
+                  <label style="color:white;">Amount</label>
+                  <input  style="color:black; background-color:white;" name="amount" type="text" value="{{ amount }}" disabled required>
+                </div>
+
+                 </div>
+
+
+
+          <label style="color:white;">Card Number</label>
+          <input maxlength="4" ng-model="f4" type="text" required>
+          <input maxlength="4" ng-model="s4" type="text" required>
+          <input maxlength="4" ng-model="t4" type="text" required>
+          <input maxlength="4" ng-model="l4" type="text" required>
+        </div>
+
+            <div class="input-wrap">
+              <label style="color:white;">Card Holder's Name </label>
+              <input ng-model="hname" name="name" type="text" required>
+            </div>
+            <div class="halfbox">
+                <div class="input-wrap">
+                  <label style="color:white;">Valid Till</label>
+                  <div class="twin">
+                  <input maxlength="2" ng-model="edm" type="text" required>
+                  <input maxlength="2" ng-model="edy" type="text" required>
+                  </div>
+                </div>
+        
+                <div class="input-wrap">
+                  <label style="color:white;">CVV</label>
+                  <input maxlength="3" ng-model="cvv" name="cvv" type="text" required>
+                </div>
+
+{% if data1 %}
+
+               <p style="color: #87b200;; margin-top: 58px; margin-left: 40px; font-size: 30px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+    Paid
+</p>
+
+
+
+{% else %}
+<button class="button" style="--clr: #87b200;margin-top:58px;
+margin-left:40px;">
+    <span class="button-decor"></span>
+    <div class="button-content">
+        <div class="button__icon">
+            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                <circle opacity="0.5" cx="25" cy="25" r="23" fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                <mask id="icon-payments-cat_svg__a" fill="#fff">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                    </path>
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z" fill="#fff"></path>
+                <path d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z" fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                <defs>
+                    <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25" y2="48" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <span class="button__text">Payments</span>
+    </div>
+</button>
+{% endif %}
+
+
+      </div>
+      </div>
+      <div class="card">
+        <div>
+        <div class="clayout">
+          <div class="c-front">
+          <p class="chiplogo">
+            <span class="chip">
+              <b></b></span>
+            <span class="logo">
+            <b class="master"></b>
+            </span>
+            </p>
+          <p class="cnum">
+            <span ng-bind="f4">XXXX</span> - <span ng-bind="s4">XXXX</span> - <span ng-bind="t4">XXXX</span> - <span ng-bind="l4">XXXX</span> 
+            </p>
+            <P class="cname"><span>Card Holder</span><label ng-bind="hname">ABC</label></P>
+            <P  class="cvtr"><span>Valid Till</span><label ng-bind="edm">01</label> / <label ng-bind="edy">28</label></P>
+            </div>
+          <div class="c-back">
+            <p class="topc"><span>136589420</span><span>sddv5</span></p>
+            <p class="backit"></p>
+            <p class="cvv"><span>CVV</span><b ng-bind="cvv"></b></p>
+          <p class="chiplogo">
+          <span class="logo">
+            <b class="master"></b>
+            </span>
+            </p>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       </form>
+
+  </div>
+ </div>
+ <script>
+     var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.f4 = "";
+            $scope.s4 = "";
+            $scope.t4 = "";
+            $scope.l4 = "";
+            $scope.hname = "";
+            $scope.edm = "";
+            $scope.edy = "";
+            $scope.cvv = "";
+        });
+
+$('.twin input').on('focus', function(){
+  $(this).parent().addClass('focusit');
+}).blur(function(){
+  $(this).parent().removeClass('focusit');
+});
+
+
+$('.four-num input[ng-model="f4"]').on('keyup change', function(){
+if($(this).val().slice(0,1) === "4"){
+  $('.logo b').attr('class','visa');
+  $('.clayout').addClass('blueit');
+}else{
+    $('.logo b').attr('class','master');
+  $('.clayout').removeClass('blueit');
+  };
+});
+$('.four-num input').on('keyup change', function(){
+  $in = $(this);
+    if ($in.val().length > 3) {
+      $in.next().focus();
+    };  
+ });
+$('input[ng-model="cvv"]').on('focus', function(){
+  $('#payment .card').addClass('flip');
+}).on('blur', function(){
+  $('#payment .card').removeClass('flip');
+});
+  $('.twin input').on('keyup change', function(){
+  $in = $(this);
+  if($in.next().length){
+    if ($in.val().length > 1) {
+      $in.next().focus();
+    };
+  }
+  else{
+    if ($in.val().length > 1) {
+      $in.blur();
+    }
+  }
+ });
+  
+
+ </script>
+ 
+        </div></div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+	  <base href="/static/bioherb_analysis/outlook_requisites/">
+  	<title>BioHerb Analysis :: InspectFindings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+
+	   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--/google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!--//google-fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'bioherb_analysis/bioherb_home/css/style-starter.css' %}">
+
+	</head>
+	<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'images/2.jpg' %});
+    background-repeat: no-repeat;height:100vh;">
+	 <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+    <header id="site-header" class="fixed-top" style=" background-color:white; ">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="/bioherb_analysis_home/">
+                        BioHerb<span class="log">Analysis</span>
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/outlook_requisites/">Outlook Requisites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/actionable_requisites/">Actionable Requisites</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/inspect_findings/">Inspect Findings</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/bioherb_analysis_logout/">Logging Out</a>
+                        </li>
+                    </ul>
+					  </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+
+
+
+<br>
+
+	<section class="ftco-section">
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h4 class="text-center mb-4" style="color: white; font-family:book man old;font-size:28px;">INSPECT FINDINGS</h4>
+					<div class="table-wrap" style="max-height:400px; overflow:auto;">
+						<table class="table" >
+					    <thead class="thead-primary">
+					      <tr style="background-color:#2164F4;">
+					        <th style="font-size:15px;">CLIENT.ID</th>
+					        <th style="font-size:15px;">ANTIBIOTICS NAME</th>
+					        <th style="font-size:15px;">Dl</th>
+					        <th style="font-size:15px;">Du</th>
+					        <th style="font-size:15px;">Pl</th>
+                              <th style="font-size:15px;">Pu</th>
+                              <th style="font-size:15px;">TARGET WEED</th>
+                              <th style="font-size:15px;">GROWTH OF TREATED SAMPLE</th>
+                              <th style="font-size:15px;">GROWTH OF CONTROL SAMPLE</th>
+                              <th style="font-size:15px;">IC50</th>
+                              <th style="font-size:15px;">GROWTH INHIBITION</th>
+                              <th style="font-size:15px;">HILL COEFFICIENT</th>
+                              <th style="font-size:15px;">CONFIDENCE INTERVAL</th>
+                              <th style="font-size:15px;">BIOHERB ANALYSIS PLOT</th>
+
+					      </tr>
+					    </thead>
+					    <tbody>
+                         {% for i in data %}
+					      <tr>
+                             <th style="background-color:#f4f6fc;">{{i.client_id}}</th>
+                             <th>{{i.antibiotics_name}}</th>
+					         <th style="background-color:#f4f6fc;">{{i.Dl}}</th>
+					         <td>{{i.Du}}</td>
+					         <td>{{i.Pl}}</td>
+					         <td>{{i.Pu}}</td>
+					         <td>{{i.target_weed}}</td>
+					         <td>{{i.growth_of_treated_sample}}</td>
+					         <td>{{i.growth_of_control_sample}}</td>
+					         <td>{{i.IC50}}</td>
+					         <td>{{i.growth_inhibition}}</td>
+					         <td>{{i.hill_coefficient}}</td>
+					         <td>{{i.confidence_interval}}</td>
+                               <td>
+                                   {% if i.bioherb_analysis_plot %}
+                                        <a href="{{ i.bioherb_analysis_plot.url }}" target="_blank">
+                                            <img src="{{ i.bioherb_analysis_plot.url }}"  style="max-width: 150px; max-height: 150px;">
+                                        </a>
+                                    {% else %}
+                                    No file available
+                                    {% endif %}
+                               </td>
+					      </tr>
+{% endfor %}
+
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Requirement Upload :: ClientHub</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Course Registration Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<link href="{% static 'client/client_req/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<!-- //js -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farmland Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'client/client_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'client/client_home/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'client/client_home/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<link rel="stylesheet" href="{% static 'client/client_home/css/flexslider.css' %}" type="text/css" media="screen" property="" />
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="{% static 'client/client_home/css/font-awesome.min.css' %}" />
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+
+</head>
+<body style="background-image: url({% static 'images/bg2.jpg' %}); background-repeat:no-repeat;">
+<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+<div class="banner">
+		<div class="container">
+			<nav class="navbar navbar-default" >
+				<div class="navbar-header navbar-left" >
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="wthree_logo">
+						<h1><a class="navbar-brand" href="/client_home/" ><span>F</span>armland</a></h1>
+					</div>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav link-effect-5" id="link-effect-5">
+							<li ><a href="/client_home/" data-hover="Home">Home</a></li>
+							<li class="active"><a href="/client_req/" data-hover="Requirement">Requirement</a></li>
+							<li><a href="/client_checkpoints/" data-hover="Checkpoints">Checkpoints</a></li>
+<!--							<li class="dropdown">-->
+<!--								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Short Codes">Short Codes <b class="caret"></b></a>-->
+<!--								<ul class="dropdown-menu agile_short_dropdown">-->
+<!--									<li><a href="icons.html">Icons</a></li>-->
+<!--									<li><a href="typography.html">Typography</a></li>-->
+<!--								</ul>-->
+<!--							</li>-->
+							<li><a href="/payment/" data-hover="Payment">Payment</a></li>
+							<li><a href="/client_logout/" data-hover="Logout">Logout</a></li>
+						</ul>
+						<div class="w3_social_icons">
+							<ul class="w3layouts_social">
+
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</nav>
+
+
+	<!-- banner -->
+<div class="video">
+	<div class="center-container">
+	    <div class="w3ls-agileinfo">
+			<h1> Requirement Form </h1>
+		</div>
+		 <div class="bg-agile">
+
+			<div class="login-form">
+				<form action="/client_req/" method="post">
+					{% csrf_token %}
+
+					<input type="text"  name="client_id" value="{{d}}" required="" disabled/>
+					<select name="antibiotics_name" style="width: 95.4%;
+						padding: 10px 10px 10px 10px;
+						font-weight: normal;
+						background: none;
+						border: none;
+						background: rgba(235, 235, 235, 0.15);
+						color: #ffffff !important;
+						outline: none;
+						font-size: 14px;
+						margin: 6px 0 17px 0px;
+						transition: 0.5s all;
+						-webkit-transition: 0.5s all;
+						-o-transition: 0.5s all;
+						-ms-transition: 0.5s all;
+						-moz-transition: 0.5s all;
+						font-family: 'Roboto', sans-serif;" required>
+						<option value="" disabled selected>Select Antibiotics Name</option>
+						<option value="Apex-700">Apex-700</option>
+						<option value="Arachne-12">Arachne-12</option>
+						<option value="Atlas-8">Atlas-8</option>
+						<option value="Cerberus-X">Cerberus-X</option>
+						<option value="Charybdis-20">Charybdis-20</option>
+						<option value="Chimera-24">Chimera-24</option>
+						<option value="Hydra-9">Hydra-9</option>
+						<option value="Inhibitol-X7">Inhibitol-X7</option>
+						<option value="Lazarus-7">Lazarus-7</option>
+						<option value="Leviathan-7">Leviathan-7</option>
+						<option value="Morpheus-5">Morpheus-5</option>
+						<option value="Nebula-X">Nebula-X</option>
+						<option value="Panacea-X">Panacea-X</option>
+						<option value="Phoenix-13">Phoenix-13</option>
+						<option value="Scylla-15">Scylla-15</option>
+						<option value="Silent Tide">Silent Tide</option>
+						<option value="Spectracide-11">Spectracide-11</option>
+						<option value="Titan-1">Titan-1</option>
+						<option value="Vanquish-42">Vanquish-42</option>
+					</select>
+
+
+					<select name="chemical" style="width: 95.4%;
+						padding: 10px 10px 10px 10px;
+						font-weight: normal;
+						background: none;
+						border: none;
+						background: rgba(235, 235, 235, 0.15);
+						color: #ffffff !important;
+						outline: none;
+						font-size: 14px;
+						margin: 6px 0 17px 0px;
+						transition: 0.5s all;
+						-webkit-transition: 0.5s all;
+						-o-transition: 0.5s all;
+						-ms-transition: 0.5s all;
+						-moz-transition: 0.5s all;
+						font-family: 'Roboto', sans-serif;" required>
+						<option value="" disabled selected>Select Chemical</option>
+						<option value="amoxicillin">Amoxicillin</option>
+						<option value="ampicillin">Ampicillin</option>
+						<option value="avelox_moxifloxacin">Avelox (Moxifloxacin)</option>
+						<option value="cephalosporin">Cephalosporin</option>
+						<option value="cefotaxime">Cefotaxime</option>
+						<option value="clindamycin">Clindamycin</option>
+						<option value="doxycycline">Doxycycline</option>
+						<option value="fluoroquinolone">Fluoroquinolone</option>
+						<option value="lincosamide">Lincosamide</option>
+						<option value="macrolide">Macrolide</option>
+						<option value="methicillin">Methicillin</option>
+						<option value="nafcillin">Nafcillin</option>
+						<option value="nitrofurantoin">Nitrofurantoin</option>
+						<option value="oxacillin">Oxacillin</option>
+						<option value="penicillin">Penicillin</option>
+						<option value="penicillin_G">Penicillin G</option>
+						<option value="roxithromycin">Roxithromycin</option>
+						<option value="tequin_gatifloxacin">Tequin (Gatifloxacin)</option>
+						<option value="trovan_azithromycin">Trovan (Azithromycin)</option>
+						<option value="vancomycin">Vancomycin</option>
+					</select>
+
+
+
+					<input type="number"  name="quantity" style="width: 95.4%;
+    padding: 10px 10px 10px 10px;
+    font-weight: normal;
+    background: none;
+    border: none;
+    background: rgba(235, 235, 235, 0.15);
+    color: #ffffff !important;
+    outline: none;
+    font-size: 14px;
+    margin: 6px 0 17px 0px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    font-family: 'Roboto', sans-serif;" placeholder="Quantity" required="" />
+
+					<select name="bacteria" style="width: 95.4%;
+						padding: 10px 10px 10px 10px;
+						font-weight: normal;
+						background: none;
+						border: none;
+						background: rgba(235, 235, 235, 0.15);
+						color: #ffffff !important;
+						outline: none;
+						font-size: 14px;
+						margin: 6px 0 17px 0px;
+						transition: 0.5s all;
+						-webkit-transition: 0.5s all;
+						-o-transition: 0.5s all;
+						-ms-transition: 0.5s all;
+						-moz-transition: 0.5s all;
+						font-family: 'Roboto', sans-serif;" required>
+						<option value="" disabled selected>Select Bacteria Type</option>
+						<option value="MDR-Acinetobacter">MDR-Acinetobacter (Multi-drug resistant Acinetobacter baumannii)</option>
+						<option value="ESBL-Enterobacteriaceae">ESBL-Enterobacteriaceae (Extended-spectrum beta-lactamase producing Enterobacteriaceae)</option>
+						<option value="Acinetobacter baumannii">Acinetobacter baumannii</option>
+						<option value="MDR-Staphylococcus epidermidis">MDR-Staphylococcus epidermidis (Multi-drug resistant Staphylococcus epidermidis)</option>
+						<option value="Penicillin-resistant Streptococcus pneumoniae">Penicillin-resistant Streptococcus pneumoniae</option>
+						<option value="Helicobacter pylori">Helicobacter pylori</option>
+						<option value="Streptococcus pneumoniae">Streptococcus pneumoniae</option>
+						<option value="Clostridium difficile">Clostridium difficile</option>
+						<option value="Pseudomonas aeruginosa">Pseudomonas aeruginosa</option>
+						<option value="Salmonella Typhi">Salmonella Typhi</option>
+						<option value="Chlamydia trachomatis">Chlamydia trachomatis</option>
+						<option value="Vancomycin-resistant Enterococcus">Vancomycin-resistant Enterococcus</option>
+						<option value="Klebsiella pneumoniae">Klebsiella pneumoniae</option>
+						<option value="Neisseria gonorrhoeae">Neisseria gonorrhoeae</option>
+						<option value="Methicillin-resistant Staphylococcus aureus">Methicillin-resistant Staphylococcus aureus</option>
+						<option value="Campylobacter jejuni">Campylobacter jejuni</option>
+						<option value="Gram-positive and Gram-negative">Gram-positive and Gram-negative</option>
+						<option value="Mycobacterium tuberculosis">Mycobacterium tuberculosis</option>
+						<option value="Streptomyces aureofaciens">Streptomyces aureofaciens</option>
+					</select>
+
+
+					<select name="withdrawal_reason" style="width: 95.4%;
+						padding: 10px 10px 10px 10px;
+						font-weight: normal;
+						background: none;
+						border: none;
+						background: rgba(235, 235, 235, 0.15);
+						color: #ffffff !important;
+						outline: none;
+						font-size: 14px;
+						margin: 6px 0 17px 0px;
+						transition: 0.5s all;
+						-webkit-transition: 0.5s all;
+						-o-transition: 0.5s all;
+						-ms-transition: 0.5s all;
+						-moz-transition: 0.5s all;
+						font-family: 'Roboto', sans-serif;" required>
+						<option value="" disabled selected>Select Withdrawal Reason</option>
+						<option value="Catastrophic disruption of human gut microbiome leading to systemic health complications">Catastrophic disruption of human gut microbiome leading to systemic health complications</option>
+						<option value="Unintended disruption of host cell membranes, leading to organ failure">Unintended disruption of host cell membranes, leading to organ failure</option>
+						<option value="Disruption of host immune response,leading to organ failure">Disruption of host immune response,leading to organ failure</option>
+						<option value="Increased risk of tendon problems and nerve damage">Increased risk of tendon problems and nerve damage</option>
+						<option value="Uncontrolled replication and unintended targeting of beneficial gut bacteria">Uncontrolled replication and unintended targeting of beneficial gut bacteria</option>
+						<option value="Nausea, vomiting, and diarrhea">Nausea, vomiting, and diarrhea</option>
+						<option value="Ineffective against intracellular bacterial infections and prone to fungal degradation">Ineffective against intracellular bacterial infections and prone to fungal degradation</option>
+						<option value="Unintended activation of virulence factors in targeted bacteria, worsening infections">Unintended activation of virulence factors in targeted bacteria, worsening infections</option>
+						<option value="Unforeseen allergic reactions and severe immunotoxicity in human trials">Unforeseen allergic reactions and severe immunotoxicity in human trials</option>
+						<option value="Unforeseen neurotoxicity and rapid emergence of multi-drug resistant strains">Unforeseen neurotoxicity and rapid emergence of multi-drug resistant strains</option>
+						<option value="Ineffective against rapidly mutating bacterial strains">Ineffective against rapidly mutating bacterial strains</option>
+						<option value="Disruption of host immune response, leading to increased susceptibility to other infections">Disruption of host immune response, leading to increased susceptibility to other infections</option>
+						<option value="Increased risk of tendon problems and liver damage">Increased risk of tendon problems and liver damage</option>
+						<option value="Severe immune system suppression and autoimmune reactions">Severe immune system suppression and autoimmune reactions</option>
+						<option value="Short-lived efficacy due to unforeseen bacterial endospore resistance">Short-lived efficacy due to unforeseen bacterial endospore resistance</option>
+						<option value="Unforeseen accumulation in human tissues, leading to long-term health effects">Unforeseen accumulation in human tissues, leading to long-term health effects</option>
+						<option value="Emergence of hyper-resistant bacterial strains with bypassed pathways">Emergence of hyper-resistant bacterial strains with bypassed pathways</option>
+						<option value="Increased risk of heart rhythm problems">Increased risk of heart rhythm problems</option>
+						<option value="Increased risk of liver damage">Increased risk of liver damage</option>
+						<option value="Inability to adapt to bacterial biofilm formation and horizontal gene transfer">Inability to adapt to bacterial biofilm formation and horizontal gene transfer</option>
+					</select>
+
+
+
+					<input type="submit" value="Upload">
+					<br>
+				</form>
+
+			</div>
+		</div>
+		<br>
+	<!-- //banner -->
+	 <!--copyright-->
+
+		<div class="copy w3ls">
+
+	    </div>
+	<!--//copyright-->
+	</div>
+</div>
+<script defer src="{% static 'client/client_home/js/jquery.flexslider.js' %}"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				</script>
+
+
+
+<script type="text/javascript" src="{% static 'client/client_home/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'client/client_home/js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="{% static 'client/client_home/js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+</body>
+</html>

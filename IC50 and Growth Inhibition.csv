@@ -1,0 +1,21 @@
+failed_antibiotics,Dl,Du,Pl,Pu,target_weed,growth_of_treated_sample,growth_of_control_sample,hill_coefficient,confidence_interval
+Titan-1,30,50,40,60,Dandelion,30,100,1.5,12.3 - 16.9
+Leviathan-7,18,30,25,35,Ipomoea spp,35,100,1.8,11.5-9.6
+Chimera-24,12,20,15,25,Echinochloa crus-galli,20,100,2,10.5-9.7
+Hydra-9,25,50,20,10,Johnson Grass,50,100,2.1,7.2 - 4.4
+Spectracide-11,10,20,20,40,Solanum nigrum,35,100,1.8,6.2 - 3.5
+Scylla-15,50,90,65,85,Pigweed,25,100,1.2,2.9 - 4.3
+Charybdis-20,20,50,45,70,Ambrosia trifida,45,100,2.3,2.5 - 4.4
+Arachne-12,25,50,20,10,Horsetail,30,100,1.8,5.9 - 8.8
+Panacea-X,15,30,10,25,Wild Oat,50,100,1.1,5.9 - 8.9
+Silent Tide,25,15,40,20,Bermuda Grass,15,100,2.3,0.78 - 1.19
+Cerberus-X,10,25,15,30,Goosefoot,40,100,2.5,1.78 - 1.20
+Vanquish-42,30,40,25,35,Purple nutsedge ,30,100,2.9,2.78 - 1.20
+Morpheus-5,20,35,18,30,Canada thistle,20,100,3,6.78 - 3.15
+Nebula-X,15,25,10,20,Hydrilla verticillata,85,100,2.7,7.78 - 4.23
+Inhibitol-X7,25,40,20,35,Parthenium hysterophorus,25,100,1.4,5.07 - 3.85
+Atlas-8,10,20,15,25,Creeping buttercup,45,100,1.8,0.78 - 1.25
+Apex-700,30,10,40,15,Johnsongrass,30,100,2.9,4.58 - 1.52
+Phoenix-13,15,25,18,30,Portulaca oleracea,50,100,2.7,7.58 - 5.69
+Lazarus-7,20,35,25,40,Cyperus esculentus,25,100,1.6,5.18 - 3.77
+Tigecycline,40,15,10,20,Datura stramonium,40,100,2.7,0.78 - 1.29

@@ -1,0 +1,141 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+ <base href="/static/herbiconversion_nexus/herbiconversion_home/">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>HerbiConversion Home :: Herbicides</title>
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+
+
+
+
+
+	<body style="background-image: url({% static 'images/n.jpg' %}); background-repeat:no-repeat;  max-height:700px;">
+	 <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+<div class="w3l-top-header">
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark stroke">
+        <a class="navbar-brand" href="/herbiconversion_home/">
+          <span class="fa fa-thumbs-o-up"></span> HerbiConversion
+        </a>
+        <!-- if logo is image enable this
+      <a class="navbar-brand" href="#/herbiconversion_home/">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link effect-3" href="/bioquotient_report/">BioQuotient Report</a>
+            </li>
+            <li class="nav-item @@services">
+              <a class="nav-link effect-3" href="/herbi_conversion/">HerbiConversion Analysis</a>
+            </li>
+              <li class="nav-item active">
+              <a class="nav-link effect-3" href="/wrap_up_report/">Wrap-Up Report</a>
+            </li>
+            <li class="nav-item @@contact-active">
+              <a class="nav-link effect-3" href="/herbiconversion_nexus_logout/">Logging Out</a>
+            </li>
+          </ul>
+          <div class="phone">
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+
+
+<br><br><br>
+
+	<section class="ftco-section">
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" >
+					<h4 class="text-center mb-4" style="color: black; font-family:book man old;font-size:28px;">HERBICONVERSION NEXUS ANALYSIS REPORT</h4>
+					<div class="table-wrap" style="overflow : auto;max-height:400px;">
+						<table class="table">
+					    <thead class="thead-primary">
+					      <tr style="background-color:#b106ec;">
+
+					        <th style="font-size:15px;color:white;text-align:center;">CLIENT.ID</th>
+					        <th style="font-size:15px;color:white;text-align:center;">ANTIBIOTICS NAME</th>
+					        <th style="font-size:15px;color:white;text-align:center;">HERBICONVERSION PERCENTAGE</th>
+					        <th style="font-size:15px;color:white;text-align:center;">ANTIBIOTIC CANDICATE</th>
+					        <th style="font-size:15px;color:white;text-align:center;">TARGET WEED</th>
+					        <th style="font-size:15px;color:white;text-align:center;">MECHANISM OF ACTION HERBICIDAL</th>
+					        <th style="font-size:15px;color:white;text-align:center;">STAGE OF DEVELOPEMENT</th>
+					        <th style="font-size:15px;color:white;text-align:center;">ENVIRONMENTAL CONSIDERATIONS</th>
+					        <th style="font-size:15px;color:white;text-align:center;">KEY MODIFICATIONS</th>
+					        <th style="font-size:15px;color:white;text-align:center;">POTENTIAL CHALLENGES</th>
+					        <th style="font-size:15px;color:white;text-align:center;">MATERIALS NEED</th>
+					        <th style="font-size:15px;color:white;text-align:center;">DURATION</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+                         {% for i in data %}
+					      <tr>
+					        <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.client_id}}</th>
+                             <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;" >{{i.antibiotics_name}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.herbiconversion_pert}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.antibiotic_candidate}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.target_weeds}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.mechanism_of_action_Herbicidal}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.stage_of_development}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.environmental_considerations}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.key_modifications}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.potential_challenges}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.materials_needed}}</th>
+					         <th STYLE="font-weight: normal;color:black;background-color:white;text-align:center;">{{i.duration}}</th>
+
+
+
+					      </tr>
+{% endfor %}
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	</body>
+</html>
+

@@ -1,0 +1,435 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+  	<title>BioQuotient Scan :: Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="{% static 'admins/admins_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="{% static 'admins/admins_home/css/style.css' %}" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="{% static 'admins/admins_home/css/font-awesome.css' %}" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="{% static 'admins/admins_home/js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'admins/admins_home/js/bootstrap.js' %}"></script>
+<script src="{% static 'admins/admins_home/js/SmoothScroll.min.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+	</head>
+  <style>
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+
+.button-25 {
+  background: #039487;
+  border: 1px solid #039487;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-25:hover,
+.button-25:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #039487;
+}
+
+.button-25:active {
+  opacity: .5;
+}
+
+
+
+.button-26 {
+  background: #FFFFFF;
+  border: 1px solid #039487;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color:#039487  ;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+
+.button-27 {
+  background: #FFFFFF;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color:#FF4742;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+
+.button-30 {
+  background: #7B68EE;
+  border: 1px solid #7B68EE;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-30:hover,
+.button-30:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #7B68EE;
+}
+
+.button-30:active {
+  opacity: .5;
+}
+
+
+.volume {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(205, 191, 247);
+  overflow: hidden;
+  position: relative;
+}
+.volume-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  position: relative;
+}
+.volume-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+.volume-icon:before {
+  content: "";
+  display: flex;
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.volume-input:checked + .volume-icon:before {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+.volume-svg {
+  z-index: 2;
+  color: rgb(32, 33, 36);
+  height: 30px;
+  width: 30px;
+}
+.volume-input:checked + .volume-icon svg {
+  color: black;
+}
+</style>
+  <body style="background-image: url({% static 'images/1.jpg' %}); background-repeat:no-repeat;  max-height:700px;">
+
+	<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+<div class="header">
+
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="/admins_home/">Admin <span>Portal</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li><a href="/admins_home/" class="hvr-sweep-to-bottom">Home</a></li>
+							<li ><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Log<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="hvr-sweep-to-bottom" href="/client_reg/">Client Hub</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/bioherb_analysis_reg/">BioHerb Analysis</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/bioquotient_scan_reg/">BioQuotient Scan</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/herbiconversion_nexus_reg/">HerbiConversion Nexus</a></li>
+								</ul>
+							</li>
+							<li ><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Validate Insights<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="hvr-sweep-to-bottom" href="/bioherb_analysis_report/">BioHerb Analysis</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/bioquotient_scan_report/">BioQuotient Scan</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="/herbiconversion_nexus_report/">HerbiConversion Nexus</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="/report_view/" class="hvr-sweep-to-bottom">Resultant Analysis</a></li>
+							<li><a href="/payslip/" class="hvr-sweep-to-bottom">Payslip</a></li>
+							<li><a href="/admins_logout/" class="hvr-sweep-to-bottom">Logout</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+
+<style>
+
+
+</style>
+
+
+<br><br><br><br>
+
+	<section class="ftco-section">
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" >
+				<h4 class="text-center mb-4" style="color: white; font-family:inherit;font-size:28px;">HERBICIDES FINAL REPORT</h4>
+<br><br>
+					<div class="table-wrap" style="overflow : auto;">
+						<table class="table" >
+					    <thead class="thead-primary">
+					      <tr style="background-color:#aebe27; ">
+
+					        <th style="font-size:15px;color:black;text-align:center;">CLIENT.ID</th>
+					        <th style="font-size:15px;color:black;text-align:center;">REPORTS</th>
+
+                              <th style="font-size: 15px; color: black;text-align:center;" colspan="2">ACTION</th>
+
+					      </tr>
+					    </thead>
+					    <tbody>
+                         {% for i in data %}
+					      <tr style="color:black;background-color:white;">
+                              <td style="font-weight: normal;color:black;text-align:center;">{{i.client_id}}</td>
+{% if i.report_view is False %}
+ <td style="text-align:center;"><center><a href="/view_final_report/{{i.client_id}}/"><button class="button-25">Generate Report</button></a></center></td>
+{% else %}
+<td style="text-align:center;"><center><a href="{{ i.final_report.url }}" target="_blank"><button class="button-30" onclick="openMinimizedWindow('{{ i.final_report.url }}')">View Report</button></a></center>
+
+	 <br>
+                                <a href="/read/{{i.client_id}}/" class="volume">
+                                    <input type="checkbox" class="volume-input" />
+                                          <div class="volume-icon">
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                              width="24"
+                                              height="24"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              fill="none"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="volume-svg"
+                                            >
+                                              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                              <path
+                                                d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+                                              ></path>
+                                            </svg>
+                                          </div>
+                                </a>
+
+
+
+
+
+
+
+
+</td>
+{% endif %}
+
+<script>
+    function openMinimizedWindow(url) {
+        // Open a new window with specific dimensions
+        window.open(url, 'ReportWindow', 'width=800,height=800,resizable=yes,scrollbars=yes,status=yes');
+    }
+</script>
+
+								{% if i.finalreportapprove is False and i.finalreportreject is False %}
+							  <td style="text-align:center;"><center><a href="/finalreportapprove/{{i.client_id}}/"><button class="button-25">Approve Report</button></a></center></td>
+								<td style="text-align:center;"><center><a href="#"><button class="button-24">Reject Report</button></a></center></td>
+								 {% endif %}
+								{% if i.finalreportapprove is True %}
+								<td style="text-align:center;"><center><a ><button class="button-26">Approved</button></a></center></td>
+								 <td style="text-align:center;"><center><a ><button class="button-27">NoAction</button></a></center></td>
+
+								{% elif i.finalreportreject is True %}
+								 <td style="text-align:center;"><center><a ><button class="button-27">NoAction</button></a></center></td>
+			 					<td><button class="button-26" role="button">Rejected</button></td>
+								{% endif %}
+
+							</tr>
+						  {% endfor %}
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
